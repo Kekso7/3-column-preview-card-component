@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca:wght@100;400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+}
+
+/* Fonts
+
+font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif;
+*/
+
+body{
+    background-color: var(--Very-light-gray);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    align-items: center;
+    
+}
+
+.container{
+
+    max-width: 700px;
+    margin: 0 auto;
+   
+}
+
+.content{
+    height: 380px;
+    width: 700px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.content img{
+    padding-bottom: 20px;
+    width: 35%;
+}
+
+.content h1{
+    padding-bottom: 20px;
+}
+
+.content p{
+    padding-bottom: 80px;
+}
+
+
+p{
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--Transparent-white);
+    font-size: small;
+    
+}
+
+h1{
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--Very-light-gray);
+}
+
+button{
+    background-color: var(--Very-light-gray);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.first-box button{
+    color: var(--Bright-orange);
+}
+
+.first-box button:hover{
+    background-color: var(--Bright-orange);
+    border: 1px solid white;
+}
+
+.second-box button{
+    color: var(--Dark-cyan);
+}
+
+.second-box button:hover{
+    background-color: var(--Dark-cyan);
+    border: 1px solid white;
+}
+
+.tird-box button{
+    color: var(--Very-dark-cyan);
+}
+
+.tird-box button:hover{
+    background-color: var(--Very-dark-cyan);
+    border: 1px solid white;
+}
+
+button:hover{
+    color: var(--Very-light-gray);
+}
+
+
+
+.first-box{
+    background-color: var(--Bright-orange);
+    padding: 30px;
+}
+
+.second-box{
+    background-color: var(--Dark-cyan);
+    padding: 30px;
+}
+
+.tird-box{
+    background-color: var(--Very-dark-cyan);
+    padding: 30px;
+}
